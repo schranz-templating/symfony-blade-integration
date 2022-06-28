@@ -17,7 +17,7 @@ class Configuration implements ConfigurationInterface
 
         $rootNode->children()
             ->scalarNode('cache')
-                ->defaultValue('%kernel.cache_dir%/twig')
+                ->defaultValue('%kernel.cache_dir%/blade')
             ->end()
             ->scalarNode('default_path')
                 ->info('The default path used to load templates')
